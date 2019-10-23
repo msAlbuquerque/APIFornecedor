@@ -1,0 +1,71 @@
+object DataModule3: TDataModule3
+  OldCreateOrder = False
+  Height = 374
+  Width = 550
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Lenovo\Des' +
+      'ktop\API FornecedoresV1.0\API Fornecedores\API - Test\DB\ERP.mdb' +
+      ';Persist Security Info=False'
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 80
+    Top = 32
+  end
+  object ADOQuery1: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select * from Fornecedores')
+    Left = 176
+    Top = 72
+    object ADOQuery1id_Fornecedor: TAutoIncField
+      FieldName = 'id_Fornecedor'
+      ReadOnly = True
+    end
+    object ADOQuery1nm_Fornecedor: TWideStringField
+      FieldName = 'nm_Fornecedor'
+      Size = 255
+    end
+    object ADOQuery1cnpj_Fornecedor: TWideStringField
+      FieldName = 'cnpj_Fornecedor'
+      Size = 255
+    end
+    object ADOQuery1tel_Fornecedor: TWideStringField
+      FieldName = 'tel_Fornecedor'
+      Size = 255
+    end
+    object ADOQuery1email_Fornecedor: TWideStringField
+      FieldName = 'email_Fornecedor'
+      Size = 255
+    end
+    object ADOQuery1cep_Fornecedor: TWideStringField
+      FieldName = 'cep_Fornecedor'
+      Size = 255
+    end
+    object ADOQuery1end_Fornecedor: TWideStringField
+      FieldName = 'end_Fornecedor'
+      Size = 255
+    end
+    object ADOQuery1bairro_Fornecedor: TWideStringField
+      FieldName = 'bairro_Fornecedor'
+      Size = 255
+    end
+    object ADOQuery1cidade_Fornecedor: TWideStringField
+      FieldName = 'cidade_Fornecedor'
+      Size = 255
+    end
+    object ADOQuery1estado_Fornecedor: TWideStringField
+      FieldName = 'estado_Fornecedor'
+      Size = 255
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 320
+    Top = 64
+  end
+end

@@ -1,0 +1,37 @@
+unit U_DM;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB;
+
+type
+  TDataModule3 = class(TDataModule)
+    ADOQuery1: TADOQuery;
+    ADOConnection1: TADOConnection;
+    DataSource1: TDataSource;
+    ADOQuery1CD_FORNECEDORES: TAutoIncField;
+    ADOQuery1NM_FORNECEDOR: TStringField;
+    ADOQuery1CNPJ_FORNECEDOR: TStringField;
+    ADOQuery1TEL_FORNECEDOR: TStringField;
+    ADOQuery1EMAIL_FORNECEDOR: TStringField;
+    ADOQuery1CEP_FORNECEDOR: TStringField;
+    ADOQuery1ENDERECO_FORNECEDOR: TStringField;
+    ADOQuery1BAIRRO_FORNECEDOR: TStringField;
+    ADOQuery1CIDADE_FORNECEDOR: TStringField;
+    ADOQuery1ESTADO_FORNECEDOR: TStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule3: TDataModule3;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+{$R *.dfm}
+
+end.

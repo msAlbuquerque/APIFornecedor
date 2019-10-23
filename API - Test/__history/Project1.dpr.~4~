@@ -1,0 +1,22 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  Unit1 in 'Unit1.pas' {Form1},
+  U_DM in 'U_DM.pas' {DataModule3: TDataModule},
+  U_Consulta in 'U_Consulta.pas' {Form2},
+  U_Principal in 'U_Principal.pas' {Form3};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.Title := 'Informação';
+  Application.CreateForm(TForm3, Form3);
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TDataModule3, DataModule3);
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+
+end.

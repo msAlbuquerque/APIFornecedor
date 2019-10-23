@@ -1,0 +1,13 @@
+CREATE TABLE `test`.`fornecedores` (
+  `id_Fornecedor` INT NOT NULL,
+  `nm_Fornecedor` VARCHAR(100) NOT NULL,
+  `cnpj_Fornecedor` VARCHAR(20) NOT NULL,
+  `tel_Fornecedor` VARCHAR(13) NOT NULL,
+  `email_Fornecedor` VARCHAR(45) NOT NULL,
+  `cep_Fornecedor` VARCHAR(9) NOT NULL,
+  `end_Fornecedor` VARCHAR(100) NOT NULL,
+  `bairro_Fornecedor` VARCHAR(45) NOT NULL,
+  `cidade_Fornecedor` VARCHAR(45) NOT NULL,
+  `estado_Fornecedor` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id_Fornecedor`),
+  UNIQUE INDEX `nm_Fornecedor_UNIQUE` (`nm_Fornecedor` ASC));
